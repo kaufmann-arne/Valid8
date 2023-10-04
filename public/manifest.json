@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Valid8 Security",
+  "short_name": "Valid8",
+  "version": "1.0.1",
+  "description": "Validator for Partnerships",
+  "icons": {
+    "16": "/icons/valid8-16.png",
+    "32": "/icons/valid8-32.png",
+    "48": "/icons/valid8-48.png",
+    "128": "/icons/valid8-128.png"
+  },
+  "permissions": ["tabs", "activeTab"],
+  "content_scripts": [
+    {
+    "matches": ["https://www.google.com/*"],
+    "css": ["main.css"],
+    "js": ["test.js"]
+    }
+  ],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "index.html"
+  },
+  "background.service_worker": {
+    "page": "background.html"
+  }
+}

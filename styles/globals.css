@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.my-font {
+  font-family: "MyFont";
+}
+
+@font-face {
+  font-family: 'MyFont';
+  src: local('MyFont'), url(../public/fonts/MyFontt.ttf) format('truetype');
+  /* other formats include: 'woff2', 'woff, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
